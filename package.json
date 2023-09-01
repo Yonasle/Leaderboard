@@ -1,10 +1,11 @@
 {
   "name": "leaderboard",
   "version": "1.0.0",
-  "description": "<a name=\"readme-top\"></a>\r <div align=\"center\">",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack serve --open"
   },
   "keywords": [],
   "author": "",

@@ -1,6 +1,6 @@
 const leaderboardData = [];
 
-async function renderLeaderboard() {
+const renderLeaderboard = async () => {
   const leaderboardTable = document.getElementById('leaderboard').getElementsByTagName('tbody')[0];
 
   // Clear the existing table rows
@@ -34,9 +34,9 @@ async function renderLeaderboard() {
     nameCell.textContent = player.user;
     scoreCell.textContent = player.score;
   });
-}
+};
 
-async function addScoreToAPI(name, score) {
+const addScoreToAPI = async (name, score) => {
   // Make a POST request to the API to add the score
   const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4y7IVkemOTTVg2fUdz/scores/';
   const data = { user: name, score };
@@ -59,6 +59,6 @@ async function addScoreToAPI(name, score) {
   } catch (error) {
     throw new Error(`Failed to add score: ${error.message}`);
   }
-}
+};
 
 export { renderLeaderboard, addScoreToAPI };
