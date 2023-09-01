@@ -2,6 +2,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url(/Leaderboard.webp);
+  background-size: cover;
+  background-position: center;
 }
 
 #leaderboard {
@@ -16,6 +19,7 @@ body {
   padding: 8px;
   border: 1px solid #ddd;
   text-align: center;
+  color: darkcyan;
 }
 
 #leaderboard th {
@@ -25,6 +29,7 @@ body {
 h1 {
   text-align: left;
   margin-top: 20px;
+  color: wheat;
   margin-left: 2%;
 }
 
@@ -32,6 +37,7 @@ h2 {
   display: inline-block;
   margin-top: 20px;
   margin-right: 20%;
+  color: antiquewhite;
   margin-left: 2%;
 }
 
@@ -60,6 +66,7 @@ h2 {
 /* Add Your Score section */
 h3 {
   margin-top: 20px;
+  color: burlywood;
 }
 
 .input-container {
@@ -85,10 +92,12 @@ input[type="text"] {
 }
 
 .add-score-container {
+  position: fixed;
+  top: 30%;
+  left: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-left: 8%;
+  align-items: baseline;
 }
 
 .add-score-container label,
